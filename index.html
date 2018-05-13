@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Oswald:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -17,53 +18,49 @@
     </div>
     <div class="container-fluid main-container">
         <div class="row">
-            <div class="col-sm-3">
-                <nav class="navbar navbar-expand-sm navbar-light navbar-style" id="myScrollspy">
-                    <div>
-                        <ul class="nav nav-pills nav-stacked navbar-style" data-spy="affix" data-offset-top="205">
-                            <li>
-                                <a href="#portfolio-item">PORTFOLIO</a>
-                            </li>
-                            <li>
-                                <a href="#about-me">ABOUT ME</a>
-                            </li>
-                            <li>
-                                <a href="#contact-me">CONTACT ME</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                    <li>
+                        <a href="#portfolio-items">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#about-me">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">CONTACT ME</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="col-sm-9">
                 <div class="portfolio-container">
-                    <div id="portfolio-item">
+                    <div class="portfolio-item" id="portfolio-items">
+                        <h2>PROJECTS</h2>
                         <div class="portfolio-style">
-                        <h2>CINEMUNCHIES</h2>
-                        <a href="https://zackeilholz.github.io/CineMunchies/">
-                            <img class="img-fluid" src="assets/imgs/Cinemunchies.png" alt="responsive-image">
-                        </a>
-                    </div>
-                    <div class="portfolio-style">
-                        <h2>COMEDY-GIFS</h2>
-                        <a href="https://hurlyburly.github.io/Comedy-GIFS/">
-                            <img class="img-fluid" src="assets/imgs/GIF-Generator.png" alt="responsive-image">
-                        </a>
-                      </div>
-                        <div class="portfolio-style">
-                        <h2>HANGMAN</h2>
-                        <a href="https://hurlyburly.github.io/Hangman/">
-                            <img class="img-fluid" src="assets/imgs/hangman_game.png" alt="responsive-image">
-                        </a>
-                       </div>
-                        <div class="portfolio-style">
-                        <h2>CRYSTAL COLLECTOR</h2>
-                        <a href="https://hurlyburly.github.io/week-4-game/">
-                            <img class="img-fluid" src="assets/imgs/blue-crystals.png" alt="responsive-image">
-                        </a>
+                            <h3>CINEMUNCHIES</h3>
+                            <a href="https://zackeilholz.github.io/CineMunchies/">
+                                <img class="img-fluid" src="assets/imgs/Cinemunchies.png" alt="responsive-image">
+                            </a>
                         </div>
-
+                        <div class="portfolio-style">
+                            <h3>COMEDY-GIFS</h3>
+                            <a href="https://hurlyburly.github.io/Comedy-GIFS/">
+                                <img class="img-fluid" src="assets/imgs/GIF-Generator.png" alt="responsive-image">
+                            </a>
+                        </div>
+                        <div class="portfolio-style">
+                            <h3>HANGMAN</h3>
+                            <a href="https://hurlyburly.github.io/Hangman/">
+                                <img class="img-fluid" src="assets/imgs/hangman_game.png" alt="responsive-image">
+                            </a>
+                        </div>
+                        <div class="portfolio-style">
+                            <h3>CRYSTAL COLLECTOR</h3>
+                            <a href="https://hurlyburly.github.io/week-4-game/">
+                                <img class="img-fluid" src="assets/imgs/blue-crystals.png" alt="responsive-image">
+                            </a>
+                        </div>
                     </div>
-                    <div id="about-me">
+                    <div id="about-me" class="portfolio-item">
                         <h2>ABOUT ME</h2>
                         <div class="profile-pic">
                             <img src="assets/imgs/Bio-Image.jpg" class="img-fluid" alt="Responsive image">
@@ -74,19 +71,19 @@
                             <p></p>
                         </div>
                     </div>
-                    <div id="contact-me">
+                    <div id="contact-me" class="portfolio-item">
                         <form action="/action_page.php">
                             <h2>CONTACT ME</h2>
                             <div class="form-group">
-                                <label for="email">Email address:</label>
+                                <label for="email">EMAIL:</label>
                                 <input type="email" class="form-control" id="email">
                             </div>
                             <div class="form-group">
-                                <label for="usr">Name:</label>
+                                <label for="usr">NAME:</label>
                                 <input type="text" class="form-control" id="usr">
                             </div>
                             <div class="form-group">
-                                <label for="comment">Message</label>
+                                <label for="comment">MESSAGE</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                             </div>
                             <button type="submit" class="btn btn-default submit-button">Submit</button>
@@ -99,22 +96,36 @@
     <footer class="footer">
         <div class="container">
             <span class="text">Copyright &copy; 2018 Kalsang Bhutia</span>
-        </div>
+            <br>
         <span class="social-glyphs">
-                <a href="https://github.com/hurlyburly" target="blank">
-                    <img src="assets/imgs/github.png" alt="Github">
+            <a href="https://github.com/hurlyburly" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </span>
+        <span class="social-glyphs">
+            <a href="https://stackoverflow.com/users/9249433/hurlyburly" target="_blank">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+        </span>
+        <span class="social-glyphs">
+            <a href="https://www.linkedin.com/in/kalbhutia/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </span>
+        <span class="social-glyphs">
+                <a href="https://twitter.com/KalsangEsq" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
                 </a>
             </span>
-            <span class="social-glyphs">
-                <a href="https://stackoverflow.com/users/9249433/hurlyburly" target="blank">
-                    <img src="assets/imgs/stack-overflow.png" alt="Stack Overflow">
-                </a>
-            </span>
-            <span class="social-glyphs">
-                <a href="https://www.linkedin.com/in/kalbhutia/" target="blank">
-                    <img src="assets/imgs/linkedin.png" alt="LinkedIn">
-                </a>
-            </span>
+    </div>
+        
     </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
