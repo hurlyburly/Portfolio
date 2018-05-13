@@ -15,6 +15,9 @@ body {
 .container-fluid{
   width:100%;
 }
+.nav-style{
+  height:auto;
+}
 .portfolio-container{
   background-color: #19a9c1;
   padding: 10px;
@@ -62,6 +65,11 @@ p {
 }
 .social-glyphs{
   font-size:3em;
+text-decoration: none;
+}
+
+.social-glyphs a:hover{
+text-decoration: none;
 }
 .footer {
   position: absolute;
