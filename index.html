@@ -7,124 +7,117 @@
     <title>Kalsang Bhutia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald:400,500,600,700" rel="stylesheet">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
-    <div class="container-fluid">
+    <div class="container-fluid header-container">
         <h1>KALSANG BHUTIA</h1>
-        <h3>Welcome to my homepage!</h3>
     </div>
-    <div class="container">
+    <div class="container-fluid main-container">
         <div class="row">
-            <nav class="col-sm-3" id="myScrollspy">
-                <nav class="navbar navbar-expand-sm navbar-light navbar-style" data-spy="affix">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <a class="navbar-brand" href="#">KALSANG</a>
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">HOME
-                                    <span class="sr-only">(current)</span>
-                                </a>
+            <div class="col-sm-3">
+                <nav class="navbar navbar-expand-sm navbar-light navbar-style" id="myScrollspy">
+                    <div>
+                        <ul class="nav nav-pills nav-stacked navbar-style" data-spy="affix" data-offset-top="205">
+                            <a class="navbar-brand" href="#">KALSANG</a>
+                            <li>
+                                <a href="#portfolio-item">PORTFOLIO</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            <li>
+                                <a href="#about-me">ABOUT ME</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT ME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT ME</a>
+                            <li>
+                                <a href="#contact-me">CONTACT ME</a>
                             </li>
                         </ul>
                     </div>
+                    <span class="social-glyphs">
+                        <a href="https://github.com/hurlyburly" target="blank">
+                            <img src="assets/imgs/github.png" alt="Github">
+                        </a>
+                    </span>
+                    <span class="social-glyphs">
+                        <a href="https://stackoverflow.com/users/9249433/hurlyburly" target="blank">
+                            <img src="assets/imgs/stack-overflow.png" alt="Stack Overflow">
+                        </a>
+                    </span>
+                    <span class="social-glyphs">
+                        <a href="https://www.linkedin.com/in/kalbhutia/" target="blank">
+                            <img src="assets/imgs/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </span>
+
                 </nav>
-            </nav>
+            </div>
             <div class="col-sm-9">
-                <div>
-                <div class="portfolio-item">
-                    <h2>CineMunchies</h2>
-                    <div class="profile-pic">
-                        <img src="assets/imgs/Cinemunchies.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="profile-info">
-                        <br>
-                        <p> Welcome to this little corner of the internet! My name is Kalsang and I'm working on learning how
-                            to build my own programs.</p>
-                    </div>
-                    <h2>COMEDY-GIFS</h2>
-                    <div class="profile-pic">
-                        <img src="assets/imgs/GIF-Generator.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="profile-info">
-                        <br>
-                        <p> Welcome to this little corner of the internet! My name is Kalsang and I'm working on learning how
-                            to build my own programs.</p>
-                    </div>
-                    <h2>HANGMAN</h2>
-                    <div class="profile-pic">
-                        <img src="assets/imgs/hangman_game.png" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="profile-info">
+                <div class="portfolio">
+                    <div id="portfolio-item">
+                        <h2>CineMunchies</h2>
+                        <a href="https://zackeilholz.github.io/CineMunchies/">
+                            <img class="img-fluid" src="assets/imgs/Cinemunchies.png" alt="responsive-image">
+                        </a>
+                        <h2>COMEDY-GIFS</h2>
+                        <a href="https://hurlyburly.github.io/Comedy-GIFS/">
+                            <img class="img-fluid" src="assets/imgs/GIF-Generator.png" alt="responsive-image">
+                        </a>
+                        <div class="profile-info">
+                            <br>
+                        </div>
+                        <h2>HANGMAN</h2>
+                        <a href="https://hurlyburly.github.io/Hangman/">
+                            <img class="img-fluid" src="assets/imgs/hangman_game.png" alt="responsive-image">
+                        </a>
+                        <div class="profile-info">
+                            <p></p>
+                        </div>
+                        <h2>CRYSTAL COLLECTOR</h2>
+                        <a href="https://hurlyburly.github.io/week-4-game/">
+                            <img class="img-fluid" src="assets/imgs/blue-crystals.png" alt="responsive-image">
+                        </a>
 
-                        <p></p>
+                        <div class="profile-info">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="about-me">
+                        <h2>ABOUT ME</h2>
+                        <div class="profile-pic">
+                            <img src="assets/imgs/Bio-Image.jpg" class="img-fluid" alt="Responsive image">
+                        </div>
 
+                        <div class="profile-info">
+                            <br>
+                            <p></p>
+                        </div>
                     </div>
-                    <h2>CRYSTAL COLLECTOR</h2>
-                    <div class="profile-pic">
-                        <img src="assets/imgs/blue-crystals.png" class="img-fluid" alt="Responsive image">
+                    <div id="contact-me">
+                        <form action="/action_page.php">
+                            <h2>CONTACT ME</h2>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="usr">Name:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Message</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default submit-button">Submit</button>
+                        </form>
                     </div>
-                    <div class="profile-info">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="about-me">
-                    <h2>ABOUT ME</h2>
-                    <div class="profile-pic">
-                        <img src="assets/imgs/Bio-Image.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="profile-info">
-                        <br>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="contact-me">
-                    <h2>CONTACT ME</h2>
-                    <div class="profile-pic">
-                        <img src="assets/imgs/Bio-Image.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="profile-info">
-                        <br>
-                        <p> </p>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <span class="text">Copyright &copy; 2018 Kalsang Bhutia</span>
-                <span class="social-glyphs">
-                    <a href="https://github.com/hurlyburly" target="blank">
-                        <img src="assets/imgs/github.png" alt="Github">
-                    </a>
-                </span>
-                <span class="social-glyphs">
-                    <a href="https://stackoverflow.com/users/9249433/hurlyburly" target="blank">
-                        <img src="assets/imgs/stack-overflow.png" alt="Stack Overflow">
-                    </a>
-                </span>
-                <span class="social-glyphs">
-                    <a href="https://www.linkedin.com/in/kalbhutia/" target="blank">
-                        <img src="assets/imgs/linkedin.png" alt="LinkedIn">
-                    </a>
-                </span>
-            </div>
-        </footer>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text">Copyright &copy; 2018 Kalsang Bhutia</span>
+        </div>
+    </footer>
 </body>
-
 </html>
