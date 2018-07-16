@@ -1,11 +1,17 @@
  
+body.pushable.background-image{
+background:url("./imgs/background-image.jpg");
+}
 .header-container {
   background-color: #e5aa20;
   opacity: 0.8;
-  color: #dee;
+  color: #fff;
   font-family: 'Pacifico', cursive; 
-  padding: 25px;
+  padding-top: 30px;
+  padding-left:30px;
+  padding-bottom:20px;
   margin-bottom: 20px;
+  font-size:40px;
 }
 .sidebar .vertical .menu{
   background-color: #666;
@@ -14,24 +20,47 @@
   color:#e5aa20;
   font-family: 'Pacifico', cursive;
   font-size: 30px;
+  margin-bottom: 5%;
 } 
-h3{
-  color:#dee;
+
+
+.row{
+  margin-top:3%;
+  background-color: #bcc;
+  border:solid 10px #ddd;
 }
-p{
+p, h3{
   font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  margin:3%;
+}
+h3{
+  font-size: 3em;
+  
 }
 .text-links{
 font-weight:bold;
 font-family: 'Open Sans', sans-serif;
+margin:3%;
 }
 .profile-pic{
-  border-radius: 50%;
-  height:350px;
-  width:300px;
+  margin:25px;
+  max-height:300px;
+  max-width:250px;
+}
+img{
+  border:solid 10px #d6c0c0;
 }
 .footer{
-  position:fixed;
   bottom:0;
   width:100%;
 }
+
+.side-bar-container.item, .side-bar-container{
+  font-family: 'Pacifico', cursive; 
+  padding:10%;
+  text-align: center;
+  background-color: #bcc;
+  height:auto;
+}
+
